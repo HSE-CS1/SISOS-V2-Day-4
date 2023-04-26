@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Total Passes by Location for {{ student_name }}</h3>
+<table>
+  <thead>
+    <tr>
+      <th># of Passes</th>
+      <th>Location</th>
+      <th>Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>{{ row.total }}</td>
+        <td>{{ row.location }}</td>
+        <td><a href="/summary/{{ row.student_id }}/{{ row.location }}" class="clr"><i class="bi bi-info-square-fill"></i></a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h4>
+  <a href="/summary" role="button">Back to Summary</a>
+</h4>
+
+{% endblock %}

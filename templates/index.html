@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Reports</h1>
+<div class="grid">
+  <h3 class="mid"><a role="button" href="/all">Show All Passes</a></h3>
+  <h3 class="mid"><a role="button" href="/today">Today's Passes</a></h3>
+  <h3 class="mid"><a role="button" href="/summary">Summary Statistics</a></h3>
+  <h3 class="mid"><a role="button" href="/student">Select a Student</a></h3>
+</div>
+<hr id="break">
+<h1>Generate a Pass</h1>
+<div class="grid">
+  <div style="text-align:center;">
+    <a href="/signout">
+        <img src="/static/signout.png" alt="">
+        <h3>Sign Out Of Class</h3>
+    </a>
+  </div>
+  <div style="text-align:center;">
+    <a href="/signin">
+      <img src="/static/signin.png" alt="">
+      <h3>Sign Back In</h3>
+    </a>
+  </div>
+</div>
+{% endblock %}

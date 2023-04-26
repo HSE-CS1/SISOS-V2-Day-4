@@ -1,0 +1,33 @@
+.clr{
+  color:#caf34c;
+  margin:0;
+}
+
+nav h3{
+  margin:0;
+}
+
+.mid{
+  text-align:center;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:.5rem auto;
+}
+#break{
+  border-top:8px solid #cafc34;
+  margin:2rem 0;
+}
+
+.msg{
+  padding:1.5rem;
+  background-color: #cafc34;
+  color:#1e1e1e;
+  border: 3px solid #6a8c03;
+  text-align:center;
+  border-radius:.75rem;
+  margin:.5rem auto;
+}
+
+
+

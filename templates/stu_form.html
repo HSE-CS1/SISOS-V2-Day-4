@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Search by Student</h3>
+<form action="/student" method="post">
+  <select name="s_id" id="s_id">
+    <option selected disabled>Student</option>
+    {% for row in rows %}
+      <option value="{{ row.s_id }}">{{row.f_name}} {{row.l_name}}</option>
+    {% endfor %}
+  </select>
+  <input type="submit" value="Get Student Summary">
+</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Passes to {{ location }} for {{ student }}</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Left At</th>
+      <th>Returned At</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row.pass_date }}</td>
+      <td>{{ row.out_time }}</td>
+      <td>{{ row.in_time }}</td>
+      <td>
+        <a href="#"><i class="bi bi-info-square-fill"></i></a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<h4><a href="/summary/{{ stu_id }}">Back to Student Summary</a></h4>
+<h4><a href="/summary">Back to Summary</a></h4>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Sign Out of Class</h3>
+<form action="/signout" method="post">
+  <div class="grid">
+    <input type="text" name="stu_id" id="stu_id" placeholder="Student Id" autofocus>
+    <input type="text" name="first" id="first" placeholder="First Name">
+    <input type="text" name="last" id="last" placeholder="Last Name">
+    <input type="text" name="loc" id="loc" placeholder="Location">
+    <input type="submit" value="Sign Out">
+  </div>
+</form>
+
+{% endblock %}
